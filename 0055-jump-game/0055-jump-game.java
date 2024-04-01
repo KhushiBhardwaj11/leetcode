@@ -8,6 +8,7 @@ class Solution {
                 // we can't proceed further.
                 return false;
             }
+            System.out.println("i: " + i + ", maxReach: " + maxReach);
             maxReach = Math.max(maxReach, i + nums[i]);
             if (maxReach >= n - 1) {
                 // If we can reach or go beyond the last index, return true.
